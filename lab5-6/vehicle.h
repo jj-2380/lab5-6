@@ -171,6 +171,12 @@ public:
 	string doors;
 	string gearbox_type;
 
+	Car() :Vehicle(){
+		doors = "0";
+		gearbox_type = "0";
+
+	}
+
 	Car(string brand, string model, string year, string power, string mileage, string number, string rent_price, string doors, string gearbox_type) :Vehicle(brand, model, year, power, mileage, number, rent_price) {
 		this->doors = doors;
 		this->gearbox_type = gearbox_type;
@@ -231,6 +237,11 @@ class Truck :public Vehicle { //Класс грузовиков
 public:
 	string load_capacity;
 	string axles;
+
+	Truck() :Vehicle() {
+		load_capacity = "0";
+		axles = "0";
+	}
 
 	Truck(string brand, string model, string year, string power, string mileage, string number, string rent_price, string load_capacity, string axles) :Vehicle(brand, model, year, power, mileage, number, rent_price) {
 		this->load_capacity = load_capacity;

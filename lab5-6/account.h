@@ -13,10 +13,10 @@ public:
 
 	Account(){}
 
-	Account(string email, string password, string full_name) { //Конструктор
+	Account(string email, string password, string name) { //Конструктор
 		this->email = email;
 		this->password = password;
-		this->name = full_name;
+		this->name = name;
 	}
 
 	Account(string str) { //Конструктор для создания аккаунта считанного из файла
